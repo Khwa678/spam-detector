@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/predict">Predict</a>
+        <a href="/about" class="active">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<!-- ABOUT SECTION -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>About This Project</h1>
+
+        <p>
+            This project is an AI-based spam SMS detection system built using
+            Machine Learning and Natural Language Processing.
+        </p>
+
+        <h3>Technologies Used</h3>
+
+        <ul class="tech-list">
+            <li>Python & Machine Learning</li>
+            <li>TF-IDF Vectorization</li>
+            <li>Multinomial Naive Bayes</li>
+            <li>Flask Backend</li>
+            <li>HTML, CSS, JavaScript</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

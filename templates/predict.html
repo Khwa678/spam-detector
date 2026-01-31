@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Message Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/predict" class="active">Predict</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<!-- MAIN PAGE -->
+<div class="page">
+    <div class="card">
+        <h2>Spam Message Prediction</h2>
+
+        <textarea id="message" placeholder="Type or paste SMS message here..."></textarea>
+
+        <button onclick="checkSpam()">Check Message</button>
+
+        <div id="result" class="result"></div>
+
+        <h4>Try Sample Messages</h4>
+        <p class="sample" onclick="fill(this)">
+            Congratulations! You have won a free iPhone.
+        </p>
+        <p class="sample" onclick="fill(this)">
+            URGENT! Your account has been selected for a prize.
+        </p>
+        <p class="sample" onclick="fill(this)">
+            Hey, are we still meeting at 5 pm?
+        </p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

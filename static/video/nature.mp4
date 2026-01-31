@@ -1,0 +1,3 @@
+<video autoplay muted loop id="bg-video">
+    <source src="{{ url_for('static', filename='video/nature.mp4') }}" type="video/mp4">
+</video>
